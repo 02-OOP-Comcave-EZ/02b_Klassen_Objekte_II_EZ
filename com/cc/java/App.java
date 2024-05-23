@@ -13,23 +13,29 @@ public class App {
         output("Blick von innen: " + cat1.getInstanceVar());
 
         // Werte ausgeben
-        output(cat1.name);
-        output(cat1.furColor);
-        output(Integer.toString(cat1.age)); // Typkonvertierung
+        output(cat1.getName());
+        output(cat1.getFurColor());
+        output(Integer.toString(cat1.getAge())); // Typkonvertierung
+
+        // cat1.furColor = "grey";
+        // output(cat1.furColor);
 
 
-    //     output("--------------------");
+    output("--------------------");
 
-    
+
     // Objekt erzeugen
     Cat cat2 = new Cat("Alonso", "grey", 35);
     output("Blick von aussen: " + cat2);
     output("Blick von innen: " + cat2.getInstanceVar());
 
     // Werte ausgeben
-    output(cat2.name);
-    output(cat2.furColor);
-    output(Integer.toString(cat2.age)); // Typkonvertierung
+    output(cat2.getName());
+    output(cat2.getFurColor());
+    output(Integer.toString(cat2.getAge())); // Typkonvertierung
+
+    cat1.setFurColor("pink");
+    output(cat1.getFurColor());
 
     }
 
